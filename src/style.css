@@ -1,22 +1,55 @@
-.first-page {
-  background-image: url("../images/background-1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+:root {
+  --background: rgba(146, 187, 228, 0.781);
+  --heading-font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: var(--background);
+}
+.hero {
+  display: block;
+  padding: 160px 20px;
+  margin: 0 auto;
   max-width: 100%;
 }
 
-.welcome {
-  font-family: "Josefin Slab", serif;
-  font-size: 300px;
-  font-weight: 600;
+.hero h1 {
+  color: black;
   text-align: center;
-  margin-top: 350px;
-  margin-bottom: 10px;
+  font-family: var(--heading-font-family);
+  font-size: 96px;
+  font-weight: 500;
+  margin-top: 50px;
 }
 
-.portfolio {
-  font-family: "Josefin Slab", serif;
-  font-size: 150px;
+.hero h3 {
+  color: black;
   text-align: center;
-  margin: 0px;
+  font-family: var(--heading-font-family);
+  font-size: 40px;
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+.hero a {
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(113, 168, 223);
+  color: whitesmoke;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  max-width: 40%;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.hero a:hover {
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(62, 120, 179);
+  color: whitesmoke;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  max-width: 40%;
 }
